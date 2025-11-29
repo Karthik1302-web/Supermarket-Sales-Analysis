@@ -1,0 +1,63 @@
+# ------------------------------------------------------
+# DATA FILES
+# ------------------------------------------------------
+
+# Ignore all CSV files EXCEPT the main dataset
+*.csv
+!supermarket_sales.csv
+
+# If you have more named datasets, keep them:
+# !sales_2024.csv
+# !customers.csv
+
+
+# ------------------------------------------------------
+# PYTHON FILES
+# ------------------------------------------------------
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# ------------------------------------------------------
+# NOTEBOOK FILES
+# ------------------------------------------------------
+
+# Jupyter checkpoint folders
+.ipynb_checkpoints/
+
+
+# ------------------------------------------------------
+# VIRTUAL ENVIRONMENTS
+# ------------------------------------------------------
+
+env/
+venv/
+.venv/
+
+
+# ------------------------------------------------------
+# IDE / SYSTEM FILES
+# ------------------------------------------------------
+
+# VS Code settings
+.vscode/
+
+# JetBrains Idea
+.idea/
+
+# System files (Windows / Mac)
+.DS_Store
+Thumbs.db
+
+
+# ------------------------------------------------------
+# LOGS / TEMP FILES
+# ------------------------------------------------------
+
+*.log
+*.tmp
+*.bak
