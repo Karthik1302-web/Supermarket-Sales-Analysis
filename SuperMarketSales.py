@@ -88,7 +88,7 @@ sns.barplot(x=Product_Total.index,y=Product_Total.values)
 plt.xlabel('Product')
 plt.ylabel('Total')
 plt.title('Product vs Total Amount')
-plt.savefig('product_total_amount.png', dpi=300, bbox_inches='tight')
+plt.savefig('product_Total.png')
 plt.xticks(rotation=45)
 plt.show()
 #This plot shows that which product has achieved the highest Total revenue.
