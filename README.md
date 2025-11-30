@@ -45,17 +45,17 @@ Columns include:
 
 **Data Cleaning Steps**
 
-✔ Converted the Date column to datetime 
+1. Converted the Date column to datetime 
 
-✔ Extracted hour from Time 
+2. Extracted hour from Time 
 
-✔ Removed missing values 
+3. Removed missing values 
 
-✔ Removed duplicate rows 
+4. Removed duplicate rows 
 
-✔ Dropped unused column (gross margin percentage) 
+5. Dropped unused column (gross margin percentage) 
 
-✔ Reset the index
+6. Reset the index
 
 **Business Questions Solved**
 
@@ -63,7 +63,7 @@ Columns include:
 
 *→ Countplot of City → Countplot of City 
 
-➡ Yangon & Naypyitaw have the highest customer counts.
+-> Yangon & Naypyitaw have the highest customer counts.
 
 
 
@@ -74,33 +74,33 @@ Columns include:
 
 3️. Gender distribution of visitors
 
-➡ Slightly more Males visit the supermarket.
+-> Slightly more Males visit the supermarket.
 
 
 4️. Which payment method is most used? 
 
-➡ E-Wallet is the most preferred payment option.
+-> E-Wallet is the most preferred payment option.
 
 
 5️. Which product line generated the highest revenue? 
 
 → Barplot of Product line vs Total Revenue
 
-➡ Health & Beauty generates the highest total revenue.
+-> Health & Beauty generates the highest total revenue.
 
 
 6️. Which gender spent more money?
 
 → Barplot of Gender vs Total Spending 
 
-➡ Male and Female customers spend almost equally.
+-> Male and Female customers spend almost equally.
 
 
 7️. What is the relationship between Quantity and Total? 
 
 → Scatterplot 
 
-➡ A positive linear relation
+-> A positive linear relation
 
 — total increases with quantity.
 
@@ -109,14 +109,14 @@ Columns include:
 
 → Line plot of Total vs Date 
 
-➡ Revenue fluctuates daily with several peak days.
+-> Revenue fluctuates daily with several peak days.
 
 
 9️. What are the busiest hours? 
 
 → Line plot of Total vs Time 
 
-*➡ Peak activity at 10 AM, stable between 5 PM – 7 PM, drops after 8 PM.
+-> Peak activity at 10 AM, stable between 5 PM – 7 PM, drops after 8 PM.
 
 
 10.Correlation between numerical features
@@ -125,7 +125,7 @@ Columns include:
 
 ➡ Quantity shows moderate correlation with Total. 
 
-➡ Time has no relation with Total.
+-> Time has no relation with Total.
 
 **Saved Visualizations**
 
