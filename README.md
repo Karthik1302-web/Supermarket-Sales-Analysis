@@ -69,7 +69,7 @@ Columns include:
 
 2️. What is the distribution of customer types (Member vs Normal)? 
 
-➡ Both Member and Normal customers visit almost equally.
+-> Both Member and Normal customers visit almost equally.
 
 
 3️. Gender distribution of visitors
