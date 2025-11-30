@@ -161,7 +161,7 @@ plt.show()
 #---------------------------------------------------------------------------
 # • Customer traffic is highest in Yangon, followed by Naypyitaw.  
 # • E-Wallet is the most preferred payment method among customers.  
-# • Food & Beverages and Health & Beauty generate the highest revenue.  
+# • Health & Beauty generate the highest revenue.  
 # • Revenue peaks around 10 AM and remains stable during evening hours.  
 # • Quantity and Total show a strong positive correlation.  
 # • Overall, customer spending patterns indicate consistent daily activity 
