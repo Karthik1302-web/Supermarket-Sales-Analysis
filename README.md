@@ -123,7 +123,8 @@ Columns include:
 
 → Heatmap
 -> Total and Gross Income are highly correlated (expected). 
--> Quantity shows moderate correlation with Total. 
+
+-> Quantity shows moderate correlation with Total.
 
 -> Time has no relation with Total.
 
