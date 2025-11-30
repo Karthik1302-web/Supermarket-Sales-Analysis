@@ -27,7 +27,7 @@ print(Market.info())
 #Basic statistics 
 print(Market.describe())
 
-#Checkl for Number 0f missing values
+#Checking for Number of missing values
 print(Market.isnull().sum())
 
 #Check for any duplicate values
@@ -35,23 +35,25 @@ print(Market.duplicated().sum())
 
 #Step3 : converting date to datetime and droping the missing & duplicate values 
 
-#Convetrting date column to datetime 
+#Converting date column to datetime 
 Market['Date'] = pd.to_datetime(Market['Date'])
 
+#Extracting hour from Time column for hourly revenue analysis
 Market['Time'] = pd.to_datetime(Market['Time'],format = '%H:%M').dt.hour
 
-#Droping the missing values
+#Dropping the missing values
 Market.dropna(inplace=True)
 
-#Droping Duplicates
+#Dropping Duplicates
 Market.drop_duplicates(inplace=True)
 
 Market.drop(columns = ['gross margin percentage'],inplace=True)
+Market.reset_index(drop=True, inplace=True)
 
 #Step 4 : Data Visualization
 
 #1.Checking count of people from each city
-sns.countplot(x=Market['City'],order=Market['City'].value_counts().index,label='City')
+sns.countplot(x=Market['City'],order=Market['City'].value_counts().index)
 plt.title('Number of People from each city')
 plt.savefig('city_count.png', dpi=300, bbox_inches='tight')
 plt.show()
@@ -90,12 +92,12 @@ sns.barplot(x=Product_Total.index,y=Product_Total.values)
 plt.xlabel('Product')
 plt.ylabel('Total')
 plt.title('Product vs Total Amount')
-plt.savefig('product_Total.png')
+plt.savefig('product_Total.png', dpi=300, bbox_inches='tight')
 plt.xticks(rotation=45)
 plt.show()
 #This plot shows that which product has achieved the highest Total revenue.
 #The plot shows that Health and Beauty products generates highest revenue.
-#Since Health and beauty has hihgest revenue, the Super Market may consider expanding the category.
+#Since Health and beauty has highest revenue, the Super Market may consider expanding the category.
 
 #6.People(Gender wise) spending 
 Spending = Market.groupby('Gender')['Total'].sum()
@@ -154,9 +156,13 @@ plt.show()
 #Total and the gross income has the good relation in the Super Market.
 #Quantity and Total has strong relation.
 #Where as total and time has no realtion.
-------------------------------------------------------------------------------------------------------------------------------------------------
-#Final Overall Conclusion
------------------------------------------------------------------------------------------------------------------------------------------------
-#Sales peak during afternoon hours, with Food & Beverages generating the highest revenue. 
-# Customer activity is strongest in Yangon, and most payments are made digitally. 
-# Ratings indicate overall good customer satisfaction, though some categories show inconsistent experiences and may need quality improvement.
+#---------------------------------------------------------------------------
+# Final Conclusion
+#---------------------------------------------------------------------------
+# • Customer traffic is highest in Yangon, followed by Naypyitaw.  
+# • E-Wallet is the most preferred payment method among customers.  
+# • Food & Beverages and Health & Beauty generate the highest revenue.  
+# • Revenue peaks around 10 AM and remains stable during evening hours.  
+# • Quantity and Total show a strong positive correlation.  
+# • Overall, customer spending patterns indicate consistent daily activity 
+#   with variations across categories and time periods.
