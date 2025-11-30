@@ -1,14 +1,16 @@
 #What are the questions to solve in this dataset.
+-------------------------------------------------------------------------
 #1.Count the number of Peoples in each city.
 #2.Count the number of Customer type in the Super Market(Member/Normal).
 #3.Count the number of Gender(Male/Female).
 #4.Count the number of Payment Methods.
 #5.Check which products have achieved highest Revenue.
 #6.Check which gender have spent most of the money.
-#7.Correlation Heatmaps.
-#8.Check the relation b/w Quantity and total.
-#9.Check total revenue Trend over Date.
-#10.Check total revenue Trend over Time.
+#7.Check the relation b/w Quantity and total.
+#8.Check total revenue Trend over Date.
+#9.Check total revenue Trend over Time.
+#10.Correlation Heatmaps.
+----------------------------------------------------------
 
 #Step1 : Importing Libraries
 import pandas as pd
@@ -152,8 +154,9 @@ plt.show()
 #Total and the gross income has the good relation in the Super Market.
 #Quantity and Total has strong relation.
 #Where as total and time has no realtion.
-
+------------------------------------------------------------------------------------------------------------------------------------------------
 #Final Overall Conclusion
+-----------------------------------------------------------------------------------------------------------------------------------------------
 #Sales peak during afternoon hours, with Food & Beverages generating the highest revenue. 
 # Customer activity is strongest in Yangon, and most payments are made digitally. 
 # Ratings indicate overall good customer satisfaction, though some categories show inconsistent experiences and may need quality improvement.
