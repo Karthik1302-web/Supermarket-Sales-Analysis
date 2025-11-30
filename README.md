@@ -59,9 +59,11 @@ Columns include:
 
 **Business Questions Solved**
 
-*1️. How many people visited from each city?
+1️. How many people visited from each city?
 
-*→ Countplot of City → Countplot of City 
+→ Countplot of City
+
+→ Countplot of City 
 
 -> Yangon & Naypyitaw have the highest customer counts.
 
